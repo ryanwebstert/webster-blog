@@ -1,0 +1,17 @@
+
+.content {
+    margin: auto;
+    width: 67.9%;
+}
+
+.post {
+    width: 100%;
+    border-bottom: 0.5px solid #A3A3A3;
+    text-decoration: none;
+    color: black;
+}
+
+.post:hover{
+    text-decoration: underline;
+}
+
