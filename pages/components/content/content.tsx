@@ -35,6 +35,7 @@ export default function Content() {
     
     return (
         <div className={styles.content}>
+            <h1 className={styles.title}>Some Articles</h1>
             <div>
                 {posts?.slice(0,5).map(post => {
                     

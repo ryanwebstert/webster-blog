@@ -2,6 +2,7 @@
 .content {
     margin: auto;
     width: 67.9%;
+
 }
 
 .post {
@@ -15,3 +16,8 @@
     text-decoration: underline;
 }
 
+
+.title {
+    font-size: 2.20rem;
+    margin-top: 25px;
+}
