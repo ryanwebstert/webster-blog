@@ -28,7 +28,7 @@ export default function Footer() {
 
                             <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
 
-                            <p><a target="_blank" rel="noopener noreferrer" href="mailto:webstertrajano2003@gmail.com" className="text-reset">webstertrajano2003@gmail.com</a></p>
+                            <p><a target="_blank" rel="noopener noreferrer" href="mailto:webstertrajano2003@gmail.com" className="text-reset">Email</a></p>
                             <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/ryanwebstert" className="text-reset">GitHub</a></p>
                             <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ryan-webster-601054244/" className="text-reset">Linkedin</a></p>
                             
