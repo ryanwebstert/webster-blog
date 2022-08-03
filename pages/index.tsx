@@ -10,7 +10,8 @@ import NavBar from './components/navbar/navbar';
 
 const Index: NextPage = () => {
   
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(Boolean);
+
 
     return (
       <>

@@ -2,25 +2,12 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import { ReactElement, ReactNode } from 'react';
-import { NextPage } from 'next/types';
 
-export type NextPageWithLayout = NextPage & {
-  getLayout?: (page: ReactElement) => ReactNode
-}
-
-type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout
-}
-
-function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+function MyApp({ Component, pageProps }: AppProps) {
   
-  const getLayout = Component.getLayout ?? ((page) => page)
-
-
-  return getLayout(<Component {...pageProps} />)
-  // <>
-    {/* <Head>
+  return (
+  <>
+    <Head>
       
         <title>Webster</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -31,10 +18,11 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
         />
         
-        </Head> */}
-        
+        </Head>
+        <Component {...pageProps} />
     
-  {/* </> */}
+  </> 
+  )
 }
 
 export default MyApp  
